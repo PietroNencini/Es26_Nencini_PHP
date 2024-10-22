@@ -8,8 +8,37 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-    
+    <h1> SONDAGGIO </h1>
+    <div class="w-50 ms-3">
+        <form action="script.php" method="get">
+            <label for="name" class="form-label">  </label>
+            <input type="text" name="name" placeholder="Nome..." class="form-control">   <br>
 
+            <input type="text" name="surname" placeholder="Cognome..." class="form-control"><br>
+
+            <label for="bd">Nato il</label>
+            <input type="date" name="birthdate" class="form-control" id="bd">                       <br>
+            
+            <label for="home_time" class="form-label"> A che ora arrivi a casa nei giorni lunghi? </label>
+            <input type="time" name="home_time" class="form-control" id="home_time"><br>
+
+            <label class="form-label"> In che modo arrivi a scuola </label><br>
+            <input type="radio" name="transport" value="A piedi" class="form-check-input" id="piedi"> <br>
+            <label for="piedi"> A piedi </label>
+            <input type="radio" name="transport" value="Mezzi pubblici" class="form-check-input" id="mezzi"><br>
+            <label for="piedi"> Con mezzi pubblici </label>
+            <input type="radio" name="transport" value="Automobile" class="form-check-input" id="auto">           <br>
+            <label for="piedi"> In automobile </label>
+
+            <label for="english" class="form-label"> Attività extrascolastiche? </label>       <br>
+            <input type="checkbox" name="english" value="Corso di inglese" class="form-check-input"> <br>
+            <input type="checkbox" name="teathre" value="Corsi di teatro" class="form-check-input">  <br>
+            <input type="checkbox" name="sport" value="Attività Sportive" class="form-check-input">  <br>
+
+            <button type="submit" class="btn btn-success"> INVIA </button>
+            <button type="reset" class="btn btn-danger"> CANCELLA </button>
+        </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
