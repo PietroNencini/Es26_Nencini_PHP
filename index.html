@@ -12,28 +12,31 @@
     <div class="w-50 ms-3">
         <form action="script.php" method="get">
             <label for="name" class="form-label">  </label>
-            <input type="text" name="name" placeholder="Nome..." class="form-control">   <br>
+            <input type="text" name="name" placeholder="Nome..." class="form-control" required>   <br>
 
-            <input type="text" name="surname" placeholder="Cognome..." class="form-control"><br>
+            <input type="text" name="surname" placeholder="Cognome..." class="form-control" required><br>
 
             <label for="bd">Nato il</label>
-            <input type="date" name="birthdate" class="form-control" id="bd">                       <br>
+            <input type="date" name="birthdate" class="form-control" id="bd" required>                       <br>
             
             <label for="home_time" class="form-label"> A che ora arrivi a casa nei giorni lunghi? </label>
-            <input type="time" name="home_time" class="form-control" id="home_time"><br>
+            <input type="time" name="home_time" class="form-control" id="home_time" required><br>
 
             <label class="form-label"> In che modo arrivi a scuola </label><br>
-            <input type="radio" name="transport" value="A piedi" class="form-check-input" id="piedi"> <br>
-            <label for="piedi"> A piedi </label>
-            <input type="radio" name="transport" value="Mezzi pubblici" class="form-check-input" id="mezzi"><br>
-            <label for="piedi"> Con mezzi pubblici </label>
-            <input type="radio" name="transport" value="Automobile" class="form-check-input" id="auto">           <br>
-            <label for="piedi"> In automobile </label>
+            <input type="radio" name="transport" value="A piedi" class="form-check-input" id="piedi">
+            <label for="piedi"> A piedi </label> <br>
+            <input type="radio" name="transport" value="Mezzi pubblici" class="form-check-input" id="mezzi">
+            <label for="piedi"> Con mezzi pubblici </label> <br>
+            <input type="radio" name="transport" value="Automobile" class="form-check-input" id="auto">         
+            <label for="piedi"> In automobile </label> <br>
 
             <label for="english" class="form-label"> Attività extrascolastiche? </label>       <br>
-            <input type="checkbox" name="english" value="Corso di inglese" class="form-check-input"> <br>
-            <input type="checkbox" name="teathre" value="Corsi di teatro" class="form-check-input">  <br>
-            <input type="checkbox" name="sport" value="Attività Sportive" class="form-check-input">  <br>
+            <input type="checkbox" name="english" value="Corso di inglese" class="form-check-input" id="english"> 
+            <label for="english"> Corso di inglese </label><br>
+            <input type="checkbox" name="teathre" value="Corso di teatro" class="form-check-input" id="teathre">  
+            <label for="english"> Corso di teatro </label><br>
+            <input type="checkbox" name="sport" value="Attività Sportive" class="form-check-input" id="sport">   
+            <label for="english"> Attività sportive </label><br>
 
             <button type="submit" class="btn btn-success"> INVIA </button>
             <button type="reset" class="btn btn-danger"> CANCELLA </button>
