@@ -7,6 +7,6 @@ table, td, tr {
     border-collapse: collapse;
 }
 
-td, tr {
+td, th {
     padding: 1rem;
 }
